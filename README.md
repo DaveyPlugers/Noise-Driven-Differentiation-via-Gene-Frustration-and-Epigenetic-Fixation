@@ -8,27 +8,26 @@ Gene expression levels in cells are inherently stochastic, yet cell differentiat
 
 ## Model Overview
 
-The system consists of coupled dynamics for gene expression \( x_i \) and epigenetic variables \( \theta_i \):
+The system consists of coupled dynamics for gene expression (x_i) and epigenetic variables (θ_i):
 
-\[
-\frac{dx_i}{dt} = F\left(\sum_j J_{ij} x_j + \theta_i + c_i\right) - x_i + \sigma_i \eta_i
-\]
+dx_i/dt = Tanh[β( sum_j J_ij x_j + θ_i + c_i )] - x_i + σ_i η_i
 
-\[
-\frac{d\theta_i}{dt} = \nu (x_i - \theta_i)
-\]
+dθ_i/dt = ν (x_i - θ_i)
 
-- \( J_{ij} \): gene regulatory interactions  
-- \( \theta_i \): epigenetic feedback variable  
-- \( c_i \): bias term  
-- \( \sigma_i \): noise strength  
-- \( \nu \): epigenetic timescale  
+Where:
 
+- J_ij : gene regulatory interactions  
+- θ_i  : epigenetic feedback variable  
+- c_i  : bias term  
+- σ_i  : noise strength 
+- β    : Transcription factor
+- ν    : epigenetic timescale  
+- η_i  : Gaussian white noise term
 ---
 
 ## Key Mechanism
 
-- Frustrated genes reside near unstable intermediate states \( x_i \approx 0 \)
+- Frustrated genes reside near unstable intermediate states x_i ≈ 0
 - Noise induces transitions between competing attractors
 - Epigenetic feedback progressively stabilizes gene expression
 - Network interactions amplify effective noise
