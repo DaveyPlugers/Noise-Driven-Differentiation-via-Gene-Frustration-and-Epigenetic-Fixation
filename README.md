@@ -33,6 +33,10 @@ Where:
 - Network interactions amplify effective noise
 - Differentiation emerges as a noise-driven yet robust process
 
+This figure illustrates the dynamics with fixation over the gene varibale (x_i) and slow divergence over the epigenetic variable (θ_i):
+
+![Stable Unstable Dynamics](Plots_Paper/ExampleBifurcation_Editted.png)
+
 ---
 
 ## Results
@@ -41,7 +45,7 @@ Where:
 
 This figure illustrates stochastic trajectories of gene expression and epigenetic variables during differentiation.
 
-![Frustrated gene dynamics](Plots_Paper/trajectory_2x2.pdf)
+![Frustrated Gene Dynamics](Plots_Paper/trajectory_2x2.png)
 
 ---
 
@@ -49,7 +53,7 @@ This figure illustrates stochastic trajectories of gene expression and epigeneti
 
 Analytical predictions and numerical simulations of differentiation time under varying noise strength and regulatory parameters.
 
-![Differentiation time scaling](Plots_Paper/TimeToDifferentiate_Jii_Beta_alt.png)
+![Differentiation Time Scaling](Plots_Paper/TimeToDifferentiate_Jii_Beta_alt.png)
 
 ---
 
@@ -57,7 +61,7 @@ Analytical predictions and numerical simulations of differentiation time under v
 
 Phase diagram showing regimes of mono- and bistable differentiation outcomes across parameter space.
 
-![Phase diagram](Plots_Paper/differentiation_beta10.png)
+![Phase Diagram](Plots_Paper/differentiation_beta10.png)
 
 ---
 
@@ -65,7 +69,7 @@ Phase diagram showing regimes of mono- and bistable differentiation outcomes acr
 
 Reconstructed Waddington landscape illustrating branching differentiation and basin structure over developmental time.
 
-![Waddington landscape](Plots_Paper/waddington_alt2.png)
+![Waddington Landscape](Plots_Paper/waddington_alt2.png)
 
 ---
 
@@ -75,16 +79,21 @@ Below are numerical illustrations of the bias-dependent differentiation probabil
 
 ### Effect of Noise Strength
 
-![Noise dependence](Plots_Paper/Analytic_Changenoise.png)
+![Noise Dependence](Plots_Paper/Analytic_Changenoise.png)
 
 ### Effect of Transcription Factor (β)
 
-![Beta dependence](Plots_Paper/Analytic_ChangeBeta.png)
+![Beta Dependence](Plots_Paper/Analytic_ChangeBeta.png)
 
 ### Effect of Epigenetic Timescale (ν)
 
-![Nu dependence](Plots_Paper/Analytic_Changenu.png)
+![Nu Dependence](Plots_Paper/Analytic_Changenu.png)
 
 ---
 
 ## Repository Structure
+
+We have provided plots from the paper, as well as many other plots made during the development of this project in Plots_Paper.
+Furthermore we provide 3 notebooks which were used to run the simulations, analysis and plotting. They are not organised and are working notebooks rather than cleaned up scripts. 
+
+For those interested feel free to contact the author: daveyplugers@gmail.com for discussion and help in the usage of these scripts.
